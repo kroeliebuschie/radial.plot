@@ -1,3 +1,13 @@
+#This code fixes the bug described in:
+#
+#http://stackoverflow.com/questions/18229385/change-the-radial-grid-segment-lines-color-in-the-radial-plot-function-plotrix
+#
+#seg.col = "gray",            has been added to line 6
+#col = seg.col                had been added to line 167
+
+
+
+
 radial.plot <- function (lengths, radial.pos = NULL, labels = NA, label.pos = NULL, 
           radlab = FALSE, start = 0, clockwise = FALSE, rp.type = "r", 
           label.prop = 1.15, main = "", xlab = "", ylab = "", line.col = par("fg"), 
